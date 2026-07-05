@@ -34,6 +34,24 @@
             list-style: none; 
             margin: 0 23px; 
         }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            
+        }
+        nav ul li a:hover{
+            color:rgb(127, 127, 223);
+            font-size:1.02rem;
+
+            
+        }
+        main hr{
+            border:0;
+            background-color:rgb(193, 127, 223);
+            height:1.2px;
+            margin:60px 84x;
+
+        }
         .left{
             font-size: 20px;
             
@@ -41,24 +59,83 @@
         .firstsection{
             display: flex;
             justify-content: space-around;
-            margin: 23px 0;
+            margin: 130px 0;
+            align-items: center;
         }
         .firstsection >  div{
             width:30%;
         }
         .leftsection{
             width: 50%;
-            height: 400px;
-            font-size: 1.3rem;
+            height: 800px;
+            font-size: 2rem;
         } 
         .rightsection{
-            width: 80%;
-            height: 400px;
+            width: 100%;
+            height: 800px;
             margin-left: 23px;
         }
         .rightsection img{
             width: 60%;
-            margin-top: 23px;
+            
+        }
+        .purple{
+            color: rgb(169, 102, 232);
+        }
+        .text-gray{
+            color:gray;
+            font-size: 1.4rem;
+            
+            
+        }
+        main span .text-gray{
+            margin-top: 100px;
+        }
+        #element{
+            color: rgb(169, 102, 232);
+        }
+        .secondsection{
+            max-width: 80VW;
+            margin-top: 30px;
+            height:80vh;
+            padding-left:130px;
+            
+        }
+        hr {
+        margin: 50px 0;
+       }
+        .secondsection h1{
+            font-size: 1.9rem;
+        }
+        main h1{
+            margin-top: 30px;
+            
+        }
+        .secondsection .box{
+            width: 80vw;
+            height: 2px;
+            background: white;
+            margin:56px 0;
+            display: flex;
+        }
+        .secondsection .vertical{
+            width: 1px;
+            height: 93px;
+            background-color: white;
+            margin:0 100px;
+           
+        }
+        .image-top{
+            width: 23px;
+            height: 100px;
+        }
+        .vertical-title{
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        .vertical-desc{
+            font-size: 1rem;
+            margin-top: 10px;
         }
 
     </style>
@@ -66,13 +143,14 @@
 <body>
     <header>
         <nav>
-            <div class="left">Bibechana's Portfolio</div>
+            <div class="left">Bibechana's Portfolio!</div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contact Me</li>
+                   <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -80,8 +158,10 @@
     <Main>
         <section class="firstsection">
             <div class="leftsection">
-                Hi! my name is Bibechana<div>I am a web developer and I love to create beautiful and functional websites. I have a passion for coding and I am always looking for new challenges and opportunities to learn and grow as a developer</div> 
-                
+                Hi, my name is <span class="purple">Bibechana</span>
+                <div>I am a passionate web developer</div>
+                <div>and I love to create beautiful and functional websites. I have a passion for coding and I am always looking for new challenges and opportunities to learn and grow as a developer,so the field i am intrested in are</div> 
+                <span id="element"></span>
             </div>
             <div class="rightsection">
                 <img src="bg copy.jpg" alt="">
@@ -90,7 +170,37 @@
 
 
         </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What have i done so far</span>
+            <h1>Work Experiences</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="bg copy.jpg" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+                    </div>
+                    
+                </div>
+                <div class="vertical">
+                    frontend developer (2012-2014)
+                </div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
+        </section>
     </Main>
+    
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Graphic Designer', 'Web Designer', 'Freelancer','video Editor'],
+      typeSpeed: 50,
+    });
+  </script>
 
     
 </body>
